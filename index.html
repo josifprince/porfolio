@@ -4,180 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Awe | PHP Web Developer</title>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Mobile Navigation Toggle -->
 <button class="mobile-nav-toggle" aria-label="Open navigation">&#9776;</button>
 
-<!-- NAVBAR -->
 <nav class="navbar">
     <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<!-- HERO SECTION -->
 <header class="hero">
     <div class="container hero-grid">
         <div class="hero-text">
             <h1>Joseph Awe</h1>
             <h2>PHP Web Developer</h2>
-            <p>
-                I design and build <strong>secure, scalable, and production-ready web applications</strong>
-                using PHP, MySQL, CodeIgniter, and modern frontend technologies. Clean architecture,
-                performance, and usability are my core focus.
-            </p>
+            <p>I build <strong>secure, scalable web applications</strong> with PHP and CodeIgniter.</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn primary">View My Work</a>
                 <a href="assets/Joseph_Awe_CV.pdf" class="btn secondary" target="_blank">Download CV</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="images/awejoseph.webp" alt="Joseph Awe">
+            <img src="images/awejoseph.webp" alt="Joseph Awe" fetchpriority="high">
         </div>
     </div>
 </header>
 
 <main>
-    <!-- ABOUT -->
-    <section id="about" class="section about">
-        <div class="container">
-            <h3>About Me</h3>
-            <p>
-                I am a results-driven PHP Web Developer with hands-on experience building
-                school portals, CBT platforms, dashboards, payment-integrated systems,
-                and custom web solutions.
-            </p>
-            <p>
-                I work across the full stack — from database design and backend logic
-                to responsive user interfaces — prioritizing maintainable code, security,
-                and scalable system design.
-            </p>
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section skills">
+    <section id="skills" class="section">
         <div class="container">
             <h3>Technical Skills</h3>
             <div class="skills-grid">
                 <div class="skill-card">
                     <h4>Backend</h4>
-                    <ul>
-                        <li>PHP (OOP & MVC)</li>
-                        <li>CodeIgniter Framework</li>
-                        <li>MySQL / Database Design</li>
-                        <li>RESTful APIs</li>
-                        <li>Authentication & Authorization</li>
-                    </ul>
+                    <ul><li>PHP (MVC)</li><li>CodeIgniter</li><li>MySQL</li><li>REST APIs</li></ul>
                 </div>
                 <div class="skill-card">
                     <h4>Frontend</h4>
-                    <ul>
-                        <li>HTML5 & Semantic Markup</li>
-                        <li>CSS3 (Responsive Layouts)</li>
-                        <li>JavaScript (Vanilla)</li>
-                        <li>UI/UX Implementation</li>
+                    <ul><li>HTML5/CSS3</li><li>JavaScript</li><li>Responsive Design</li></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h3>Get In Touch</h3>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p>Have a project in mind? Let's build something great together.</p>
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong> awejosephmofifoluwa@gmail.com</li>
+                        <li><strong>Phone:</strong> +234 810 824 3473</li>
                     </ul>
                 </div>
-                <div class="skill-card">
-                    <h4>Tools & DevOps</h4>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>cPanel & Hosting</li>
-                        <li>Basic Server Management</li>
-                        <li>Payment Gateway Integration</li>
-                    </ul>
-                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                    <div id="form-status"></div>
+                </form>
             </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h3>Selected Projects</h3>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h4>CodeChamp</h4>
-                    <p>
-                        An educational coding platform teaching secondary school students
-                        programming and logical thinking through structured lessons and challenges.
-                    </p>
-                    <a href="https://codechamp.ajworldtech.com" target="_blank">Visit Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <h4>Oghas Academy Website</h4>
-                    <p>
-                        A professional school website with dynamic content management,
-                        academic info, and responsive design.
-                    </p>
-                    <a href="http://oghasacademy.com.ng/" target="_blank">Visit Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <h4>AJWORLDWEB School Portal</h4>
-                    <p>
-                        Full-featured school management system: CBT exams,
-                        student records, attendance, result computation, and payment integration.
-                    </p>
-                    <a href="#" target="_blank">Private System</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section experience">
-        <div class="container">
-            <h3>Experience & Education</h3>
-            <div class="exp-grid">
-                <div>
-                    <h4>PHP Web Developer</h4>
-                    <p>Freelance & Product-Based Projects<br>2022 – Present</p>
-                </div>
-                <div>
-                    <h4>Education</h4>
-                    <p>B.Sc Forestry and Wildlife<br>(Transitioned into software engineering)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h3>Contact</h3>
-            <ul class="contact-list">
-                <li>Email: <a href="mailto:awejosephmofifoluwa@gmail.com">awejosephmofifoluwa@gmail.com</a></li>
-                <li>Phone: <a href="tel:+2348108243473">+234 810 824 3473</a></li>
-                <li>GitHub: <a href="https://github.com/josifprince" target="_blank">github.com/josifprince</a></li>
-                <li>LinkedIn: <a href="https://linkedin.com/in/awe-joseph-9245b0123" target="_blank">LinkedIn Profile</a></li>
-            </ul>
         </div>
     </section>
 </main>
 
-<!-- FOOTER -->
 <footer>
-    <div class="container">
-        <p>&copy; 2026 Joseph Awe. All rights reserved.</p>
-    </div>
+    <p>&copy; 2026 Joseph Awe. All rights reserved.</p>
 </footer>
 
-<!-- JS -->
 <script src="js/main.js"></script>
 </body>
 </html>
