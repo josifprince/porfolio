@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button class="mobile-nav-toggle" aria-label="Open navigation menu">&#9776;</button>
     <header class="hero">
         <div class="container">
             <h1>Hi, I’m Joseph Awe</h1>
@@ -111,5 +112,20 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.mobile-nav-toggle');
+    const navList = document.querySelector('.navbar ul');
+    navToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        navToggle.setAttribute('aria-label', navList.classList.contains('active') ? 'Close navigation menu' : 'Open navigation menu');
+    });
+    // Close nav on link click (mobile)
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 600) navList.classList.remove('active');
+        });
+    });
+    </script>
 </body>
 </html>
