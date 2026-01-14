@@ -1,91 +1,72 @@
-// Advanced Portfolio Interactivity & Animations
+// ======= MOBILE NAVIGATION =======
+const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+const navbar = document.querySelector('.navbar ul');
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scroll for nav links
-    document.querySelectorAll('.navbar a').forEach(link => {
-        link.addEventListener('click', function(e) {
-            if (this.hash) {
-                e.preventDefault();
-                document.querySelector(this.hash).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
+mobileNavToggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => navbar.classList.remove('active'));
+});
+
+// ======= SMOOTH SCROLL =======
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if(targetSection){
+            window.scrollTo({ top: targetSection.offsetTop - 70, behavior: 'smooth' });
+        }
+    });
+});
+
+// ======= DARK MODE TOGGLE =======
+const darkModeButton = document.createElement('button');
+darkModeButton.innerText = '🌙';
+darkModeButton.style.position = 'fixed';
+darkModeButton.style.bottom = '20px';
+darkModeButton.style.right = '20px';
+darkModeButton.style.padding = '10px 15px';
+darkModeButton.style.borderRadius = '50px';
+darkModeButton.style.border = 'none';
+darkModeButton.style.cursor = 'pointer';
+darkModeButton.style.backgroundColor = '#1E90FF';
+darkModeButton.style.color = '#fff';
+darkModeButton.style.zIndex = '1000';
+document.body.appendChild(darkModeButton);
+
+darkModeButton.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    if(document.body.classList.contains('light-mode')){
+        document.body.style.backgroundColor = '#f9f9f9';
+        document.body.style.color = '#333';
+        darkModeButton.innerText = '🌙';
+    } else {
+        document.body.style.backgroundColor = '#121212';
+        document.body.style.color = '#f0f0f0';
+        darkModeButton.innerText = '☀️';
+    }
+});
+
+// Highlight active navbar link on scroll
+const sections = document.querySelectorAll('section');
+const navLi = document.querySelectorAll('.navbar a');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        if(window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+        }
     });
 
-    // Animated project cards (example data)
-    const projects = [
-        {
-            name: 'School Management System',
-            tech: 'PHP | CodeIgniter | MySQL',
-            desc: 'A web application designed to manage student records, attendance, exams, and payments for secondary schools.',
-            img: 'images/school-mgt.jpg',
-            code: 'https://github.com/josephawe/school-mgt',
-            demo: '#'
-        },
-        {
-            name: 'CBT Exam System',
-            tech: 'PHP | MySQL | JavaScript',
-            desc: 'Online examination system with timer, auto grading, and result summary.',
-            img: 'images/cbt.jpg',
-            code: 'https://github.com/josephawe/cbt-exam',
-            demo: '#'
-        },
-        {
-            name: 'Student Attendance System',
-            tech: 'PHP | MySQL | JavaScript',
-            desc: 'Daily attendance tracking with color-coded and printable reports.',
-            img: 'images/attendance.jpg',
-            code: 'https://github.com/josephawe/attendance',
-            demo: '#'
-        },
-        {
-            name: 'Payment Integration (Interswitch)',
-            tech: 'PHP | MySQL | Interswitch API',
-            desc: 'Online school fee payment with transaction verification.',
-            img: 'images/payment.jpg',
-            code: 'https://github.com/josephawe/payment-integration',
-            demo: '#'
-        },
-        {
-            name: 'Simple Blog / Admin Dashboard',
-            tech: 'PHP | CodeIgniter | MySQL',
-            desc: 'Blog platform with login, CRUD posts, and role-based access.',
-            img: 'images/blog.jpg',
-            code: 'https://github.com/josephawe/simple-blog',
-            demo: '#'
+    navLi.forEach(link => {
+        link.classList.remove('active');
+        if(link.getAttribute('href').substring(1) === current){
+            link.classList.add('active');
         }
-    ];
-
-    const grid = document.querySelector('.projects-grid');
-    if (grid) {
-        projects.forEach((p, i) => {
-            const card = document.createElement('div');
-            card.className = 'project-card';
-            card.style.animationDelay = (0.1 + i * 0.1) + 's';
-            card.innerHTML = `
-                <img src="${p.img}" alt="${p.name}" class="project-img" onerror="this.style.display='none'">
-                <h4>${p.name}</h4>
-                <div class="tech">${p.tech}</div>
-                <p>${p.desc}</p>
-                <div class="project-links">
-                    <a href="${p.code}" target="_blank">View Code</a>
-                    ${p.demo !== '#' ? `<a href="${p.demo}" target="_blank">Live Demo</a>` : ''}
-                </div>
-            `;
-            grid.appendChild(card);
-        });
-    }
-
-    // Animate sections on scroll
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.15 });
-    document.querySelectorAll('.section').forEach(sec => {
-        observer.observe(sec);
     });
 });
