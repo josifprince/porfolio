@@ -1,0 +1,30 @@
+{
+  "capturedOn": "2026-10-04",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "method": "Chromium browser screenshots of public live homepages; JPEG quality 88",
+  "captures": [
+    {
+      "file": "billchamp.jpg",
+      "source": "https://billchamp.ajworldtech.com"
+    },
+    {
+      "file": "codechamp.jpg",
+      "source": "https://codechamp.ajworldtech.com"
+    },
+    {
+      "file": "freemeet.jpg",
+      "source": "https://freemeet.ajworldtech.com"
+    },
+    {
+      "file": "wecare-club.jpg",
+      "source": "https://www.wecareclubglbl.org/"
+    },
+    {
+      "file": "oghas-academy.jpg",
+      "source": "http://oghasacademy.com.ng/"
+    }
+  ]
+}

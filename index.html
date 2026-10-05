@@ -1,183 +1,110 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph Awe | PHP Web Developer</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awe Joseph Mofifoluwa | Full-Stack Developer & Product Builder</title>
+  <meta name="description" content="Lagos-based startup technology generalist, full-stack developer, and product builder with 9+ years of software and product experience. PHP, CodeIgniter, MySQL, and end-to-end product delivery.">
+  <meta name="theme-color" content="#142b3b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Awe Joseph Mofifoluwa | Technology Generalist & Product Builder">
+  <meta property="og:description" content="From product planning and PHP development to launch, user support, and digital communication. Explore BillChamp, CodeChamp, and FreeMeet.">
+  <meta property="og:locale" content="en_NG">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Awe Joseph Mofifoluwa | Full-Stack Developer & Product Builder">
+  <meta name="twitter:description" content="Lagos-based technology generalist building useful products with PHP, CodeIgniter, and MySQL.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-
-<!-- Mobile Navigation Toggle -->
-<button class="mobile-nav-toggle" aria-label="Open navigation">&#9776;</button>
-
-<!-- NAVBAR -->
-<nav class="navbar">
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- HERO SECTION -->
-<header class="hero">
-    <div class="container hero-grid">
-        <div class="hero-text">
-            <h1>Joseph Awe</h1>
-            <h2>PHP Web Developer</h2>
-            <p>
-                I design and build <strong>secure, scalable, and production-ready web applications</strong>
-                using PHP, MySQL, CodeIgniter, and modern frontend technologies. Clean architecture,
-                performance, and usability are my core focus.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary">View My Work</a>
-                <a href="assets/Joseph_Awe_CV.pdf" class="btn secondary" target="_blank">Download CV</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="images/awejoseph.webp" alt="Joseph Awe">
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="#home" aria-label="Awe Joseph Mofifoluwa home">aj<span>.</span></a>
+      <button class="mobile-nav-toggle" aria-label="Open navigation" aria-controls="navigation" aria-expanded="false" hidden><span></span><span></span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#projects">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a class="nav-contact" href="#contact">Contact ↗</a>
+      </nav>
     </div>
-</header>
-
-<main>
-    <!-- ABOUT -->
-    <section id="about" class="section about">
-        <div class="container">
-            <h3>About Me</h3>
-            <p>
-                I am a results-driven PHP Web Developer with hands-on experience building
-                school portals, CBT platforms, dashboards, payment-integrated systems,
-                and custom web solutions.
-            </p>
-            <p>
-                I work across the full stack — from database design and backend logic
-                to responsive user interfaces — prioritizing maintainable code, security,
-                and scalable system design.
-            </p>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> LAGOS, NIGERIA</p>
+          <h1 id="hero-title">Awe Joseph<br><span>Mofifoluwa</span></h1>
+          <p class="professional-title">Startup Technology Generalist <span aria-hidden="true">|</span> Full-Stack Developer <span aria-hidden="true">|</span> Product Builder</p>
+          <p class="hero-intro">I build useful digital products and help teams move from an idea to working software, launch, and ongoing user support. I work across product planning, PHP development, APIs, integrations, deployment, and user communication.</p>
+          <div class="hero-actions"><a class="button" href="#projects">View My Work <span aria-hidden="true">↗</span></a><a class="button button-outline" href="#contact">Contact Me</a><a class="text-link" href="https://github.com/josifprince" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
         </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section skills">
-        <div class="container">
-            <h3>Technical Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h4>Backend</h4>
-                    <ul>
-                        <li>PHP (OOP & MVC)</li>
-                        <li>CodeIgniter Framework</li>
-                        <li>MySQL / Database Design</li>
-                        <li>RESTful APIs</li>
-                        <li>Authentication & Authorization</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h4>Frontend</h4>
-                    <ul>
-                        <li>HTML5 & Semantic Markup</li>
-                        <li>CSS3 (Responsive Layouts)</li>
-                        <li>JavaScript (Vanilla)</li>
-                        <li>UI/UX Implementation</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h4>Tools & DevOps</h4>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>cPanel & Hosting</li>
-                        <li>Basic Server Management</li>
-                        <li>Payment Gateway Integration</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="portrait-wrap">
+          <img class="portrait" src="images/awejoseph.webp" alt="Portrait of Awe Joseph Mofifoluwa" width="1440" height="1440" fetchpriority="high">
+          <div class="portrait-label"><strong>From planning to product support.</strong><span>PHP · CodeIgniter · MySQL</span></div>
         </div>
+      </div>
+      <dl class="container proof-points">
+        <div><dt>9+ years</dt><dd>In software and product work</dd></div>
+        <div><dt>3 products</dt><dd>Featured in this portfolio</dd></div>
+        <div><dt>₦43.3 million+</dt><dd>In invoices processed through BillChamp</dd></div>
+        <div><dt>100+ students</dt><dd>Served by a school CBT backend</dd></div>
+      </dl>
     </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h3>Selected Projects</h3>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h4>CodeChamp</h4>
-                    <p>
-                        An educational coding platform teaching secondary school students
-                        programming and logical thinking through structured lessons and challenges.
-                    </p>
-                    <a href="https://codechamp.ajworldtech.com" target="_blank">Visit Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <h4>Oghas Academy Website</h4>
-                    <p>
-                        A professional school website with dynamic content management,
-                        academic info, and responsive design.
-                    </p>
-                    <a href="http://oghasacademy.com.ng/" target="_blank">Visit Project →</a>
-                </div>
-
-                <div class="project-card">
-                    <h4>AJWORLDWEB School Portal</h4>
-                    <p>
-                        Full-featured school management system: CBT exams,
-                        student records, attendance, result computation, and payment integration.
-                    </p>
-                    <a href="#" target="_blank">Private System</a>
-                </div>
-            </div>
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container split-grid">
+        <div><p class="eyebrow section-label">01 / ABOUT</p><h2 id="about-title">Software, products,<br>and the people using them.</h2></div>
+        <div class="prose"><p class="lead">I work across the practical needs of a product team.</p><p>My primary tools are PHP, CodeIgniter, and MySQL. Beyond development, I help understand business needs, plan features, design workflows, integrate services, deploy software, and support users as products evolve.</p><p>I work with clients, educators, collaborators, and product users to translate their needs into useful applications and clearer processes. That work also includes documentation, onboarding, troubleshooting, and explaining product features.</p><p>I bring practical digital marketing and social media skills to the same process: planning content, managing brand pages, publishing updates, engaging communities, and coordinating campaigns.</p><a class="text-link" href="https://ajworldtech.com" target="_blank" rel="noopener noreferrer">Explore AJWORLDTECH ↗</a></div>
+      </div>
+    </section>
+    <section id="projects" class="section tinted" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow section-label">02 / FEATURED PRODUCTS</p><h2 id="projects-title">Products I build and support.</h2></div><p>Business tools, education platforms,<br>and browser-based communication.</p></div>
+        <div class="case-studies">
+          <article class="case-study">
+            <div class="project-cover cover-billing"><p class="eyebrow">BUSINESS SOFTWARE</p><h3>BillChamp</h3><p>Billing and business management</p><a class="screenshot-link" href="https://billchamp.ajworldtech.com" target="_blank" rel="noopener noreferrer"><img class="product-screenshot" src="images/screenshots/billchamp.jpg" alt="Screenshot of the live BillChamp homepage" width="1440" height="1000" loading="lazy" decoding="async"></a><a class="cover-link" href="https://billchamp.ajworldtech.com" target="_blank" rel="noopener noreferrer">Visit BillChamp ↗</a></div>
+            <div class="case-content"><div class="case-intro"><span class="case-number">01</span><p>A billing and business-management SaaS product for businesses.</p></div><dl class="case-details"><div><dt>The problem</dt><dd>Businesses need to keep billing, payment follow-up, and day-to-day operations organized.</dd></div><div><dt>What it does</dt><dd>Invoices, receipts, proformas, payment tracking, reminders, recurring invoices, inventory and POS workflows, waybill tracking, reports, and payment integrations.</dd></div><div><dt>My contribution</dt><dd>Product planning and delivery, PHP backend and web development, database and workflow design, integrations, deployment, and ongoing improvements.</dd></div></dl><div class="outcome"><strong>₦43.3 million+ in invoices processed</strong><span>Used by 8+ businesses.</span></div></div>
+          </article>
+          <article class="case-study">
+            <div class="project-cover cover-education"><p class="eyebrow">EDUCATION TECHNOLOGY</p><h3>CodeChamp</h3><p>Coding and STEM learning for schools</p><a class="screenshot-link" href="https://codechamp.ajworldtech.com" target="_blank" rel="noopener noreferrer"><img class="product-screenshot" src="images/screenshots/codechamp.jpg" alt="Screenshot of the live CodeChamp homepage" width="1440" height="1000" loading="lazy" decoding="async"></a><a class="cover-link" href="https://codechamp.ajworldtech.com" target="_blank" rel="noopener noreferrer">Visit CodeChamp ↗</a></div>
+            <div class="case-content"><div class="case-intro"><span class="case-number">02</span><p>A platform helping schools organize and deliver coding and STEM learning.</p></div><dl class="case-details"><div><dt>The problem</dt><dd>Schools need a practical way to coordinate lessons, enrollment, access, and the people involved in learning.</dd></div><div><dt>What it does</dt><dd>School, teacher, student, and parent workflows; coding lessons; enrollment; term access; and coupon-based payment features.</dd></div><div><dt>My contribution</dt><dd>Product and platform development, feature planning, school onboarding workflows, payment-related features, deployment, and user support.</dd></div></dl><div class="outcome"><strong>Approximately 180 students across two schools</strong><span>Reached during an early four-month period.</span></div></div>
+          </article>
+          <article class="case-study">
+            <div class="project-cover cover-meetings"><p class="eyebrow">BROWSER-BASED COMMUNICATION</p><h3>FreeMeet</h3><p>From meeting room to conversation</p><a class="screenshot-link" href="https://freemeet.ajworldtech.com" target="_blank" rel="noopener noreferrer"><img class="product-screenshot" src="images/screenshots/freemeet.jpg" alt="Screenshot of the live FreeMeet homepage" width="1440" height="1000" loading="lazy" decoding="async"></a><a class="cover-link" href="https://freemeet.ajworldtech.com" target="_blank" rel="noopener noreferrer">Visit FreeMeet ↗</a></div>
+            <div class="case-content"><div class="case-intro"><span class="case-number">03</span><p>A browser-based product for creating and joining real-time meetings.</p></div><dl class="case-details"><div><dt>The problem</dt><dd>Meeting participants need a clear journey from entering a room to managing devices and taking part.</dd></div><div><dt>What it does</dt><dd>Room creation and joining, guest access, device preview, participant controls, messaging, and real-time meeting functionality.</dd></div><div><dt>My contribution</dt><dd>Building the web product and backend foundations, connecting room creation to participation, and developing responsive meeting controls.</dd></div></dl><div class="delivery-note"><strong>Product focus</strong><span>Meeting participation and responsive browser controls.</span></div></div>
+          </article>
         </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section experience">
-        <div class="container">
-            <h3>Experience & Education</h3>
-            <div class="exp-grid">
-                <div>
-                    <h4>PHP Web Developer</h4>
-                    <p>Freelance & Product-Based Projects<br>2022 – Present</p>
-                </div>
-                <div>
-                    <h4>Education</h4>
-                    <p>B.Sc Forestry and Wildlife<br>(Transitioned into software engineering)</p>
-                </div>
-            </div>
+        <div class="additional-heading"><h3>Additional web projects</h3><p>More work across education and community websites.</p></div>
+        <div class="additional-projects">
+          <article><p class="eyebrow section-label">COMMUNITY & EDUCATION</p><a class="screenshot-link additional-screenshot" href="https://www.wecareclubglbl.org/" target="_blank" rel="noopener noreferrer"><img class="product-screenshot" src="images/screenshots/wecare-club.jpg" alt="Screenshot of the live WeCare Club Global homepage" width="1440" height="1000" loading="lazy" decoding="async"></a><h3>WeCare Club Global</h3><p>A community website bringing together programs, courses, digital books, and educational resources.</p><a class="text-link" href="https://www.wecareclubglbl.org/" target="_blank" rel="noopener noreferrer">Visit WeCare Club Global ↗</a></article>
+          <article><p class="eyebrow section-label">SCHOOL WEBSITE</p><a class="screenshot-link additional-screenshot" href="http://oghasacademy.com.ng/" target="_blank" rel="noopener noreferrer"><img class="product-screenshot" src="images/screenshots/oghas-academy.jpg" alt="Screenshot of the live Oghas Academy homepage" width="1440" height="1000" loading="lazy" decoding="async"></a><h3>Oghas Academy</h3><p>A responsive school website with dynamic content management and academic information.</p><a class="text-link" href="http://oghasacademy.com.ng/" target="_blank" rel="noopener noreferrer">Visit Oghas Academy ↗</a></article>
+          <article><p class="eyebrow section-label">SCHOOL MANAGEMENT</p><div class="private-preview"><strong>AJWORLDWEB</strong><span>Private school management application</span></div><h3>AJWORLDWEB Portal</h3><p>School workflows for CBT exams, student records, attendance, result computation, and payments.</p><span class="private-label">Private application</span></article>
         </div>
+      </div>
     </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h3>Contact</h3>
-            <ul class="contact-list">
-                <li>Email: <a href="mailto:awejosephmofifoluwa@gmail.com">awejosephmofifoluwa@gmail.com</a></li>
-                <li>Phone: <a href="tel:+2348108243473">+234 810 824 3473</a></li>
-                <li>GitHub: <a href="https://github.com/josifprince" target="_blank">github.com/josifprince</a></li>
-                <li>LinkedIn: <a href="https://linkedin.com/in/awe-joseph-9245b0123" target="_blank">LinkedIn Profile</a></li>
-            </ul>
-        </div>
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="container split-grid"><div><p class="eyebrow section-label">03 / EXPERIENCE</p><h2 id="experience-title">Across development,<br>delivery, and support.</h2></div><div class="timeline">
+        <article><p class="timeline-label">2014–PRESENT · AJWORLDTECH</p><h3>Technology Generalist and Full-Stack Developer</h3><p>Build and maintain web applications and backend features for education, billing, business, and communication products. Develop APIs, databases, workflows, and integrations. Contribute across requirements, feature planning, implementation, testing, deployment, troubleshooting, and user support.</p></article>
+        <article><p class="timeline-label">2021–2023 · EBUNOLUWA INTERNATIONAL SCHOOL</p><h3>ICT and Backend Solutions</h3><p>Designed and managed a computer-based testing backend used by more than 100 students, supporting exam processing, server performance, student data, and reporting workflows.</p></article>
+        <article><p class="timeline-label">JAN 2024–PRESENT · MTN NIGERIA</p><h3>Marketing Representative</h3><p>Support customer-facing marketing, product communication, and outreach. Understand customer needs and explain technology-enabled services.</p></article>
+        <article><p class="timeline-label">2018–PRESENT · INDEPENDENT DEVELOPMENT</p><h3>Freelance Developer</h3><p>Deliver backend-driven applications for independent and client projects using PHP and C#. Build APIs that support Flutter and Kotlin mobile applications and maintain backend-focused GitHub repositories.</p></article>
+      </div></div>
     </section>
-</main>
-
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <p>&copy; 2026 Joseph Awe. All rights reserved.</p>
-    </div>
-</footer>
-
-<!-- JS -->
-<script src="js/main.js"></script>
+    <section id="skills" class="section tinted" aria-labelledby="skills-title"><div class="container"><div class="section-heading"><div><p class="eyebrow section-label">04 / SKILLS</p><h2 id="skills-title">A toolkit for product teams.</h2></div><p>PHP development is my core.<br>Product delivery connects the pieces.</p></div><div class="skills-grid">
+      <article class="skill-card"><h3>Backend and web</h3><ul><li>PHP 8 & CodeIgniter</li><li>MySQL & REST APIs</li><li>JavaScript, HTML & CSS</li></ul></article>
+      <article class="skill-card"><h3>Product delivery</h3><ul><li>Requirements gathering & MVP planning</li><li>Feature breakdown & workflow design</li><li>Testing, deployment & documentation</li><li>Onboarding & user support</li></ul></article>
+      <article class="skill-card"><h3>Integrations and operations</h3><ul><li>Payment gateway integration</li><li>Hosting & deployment</li><li>Troubleshooting</li><li>Git & GitHub</li></ul></article>
+      <article class="skill-card"><h3>Additional working experience</h3><ul><li>C#/.NET & Kotlin</li><li>Flutter integrations</li><li>WordPress</li><li>Bootstrap & Tailwind CSS</li></ul></article>
+      <article class="skill-card"><h3>Digital growth and communication</h3><ul><li>Social media & brand-page management</li><li>Content planning, scheduling & publishing</li><li>Community engagement</li><li>Campaign coordination & digital marketing</li></ul></article>
+    </div></div></section>
+    <section id="communication" class="section" aria-labelledby="communication-title"><div class="container split-grid"><div><p class="eyebrow section-label">05 / DIGITAL COMMUNICATION</p><h2 id="communication-title">Helping people understand<br>and use a product.</h2></div><div class="prose"><p class="lead">Good product work includes clear communication.</p><p>I support content planning and scheduling, publishing, brand-page management, community engagement, and campaign coordination. These practical skills help me work across technical and customer-facing teams.</p><p>I can turn feature updates into understandable content, help users navigate a product, coordinate messages around a launch, and bring user questions back into the product conversation.</p><div class="communication-tags"><span>Content planning</span><span>Publishing</span><span>Page management</span><span>User engagement</span><span>Campaign coordination</span></div></div></div></section>
+    <section id="education" class="section education-section" aria-labelledby="education-title"><div class="container"><div class="section-heading"><div><p class="eyebrow section-label">06 / EDUCATION & DEVELOPMENT</p><h2 id="education-title">Learning across disciplines.</h2></div></div><div class="credentials">
+      <article><span>2014–2019</span><h3>B.Sc. Forestry and Wildlife</h3><p>University of Ilorin</p></article><article><span>2024</span><h3>Software Engineer Certificate</h3><p>ALX</p></article><article><span>2023</span><h3>Google Android Developer (Kotlin)</h3><p>Google</p></article><article><span>2020</span><h3>Professional Diploma in Web Development</h3><p>Shaw Academy</p></article><article><span>2020</span><h3>Professional Diploma in Digital Marketing</h3><p>Shaw Academy</p></article><article><span>2021</span><h3>Networking Academy Learn-A-Thon</h3><p>Cisco</p></article>
+    </div></div></section>
+    <section id="contact" class="contact-section" aria-labelledby="contact-title"><div class="container"><p class="eyebrow">07 / CONTACT</p><div class="contact-grid"><div><h2 id="contact-title">Let’s discuss a role,<br>product, or project.</h2><p>I’m interested in startup, product, software engineering, and technology-generalist roles where I can work across teams and help turn ideas into useful products.</p><a class="button" href="mailto:awejosephmofifoluwa@gmail.com">Email Me <span aria-hidden="true">↗</span></a></div><div class="contact-details"><p class="location">Based in Lagos, Nigeria</p><a href="mailto:awejosephmofifoluwa@gmail.com"><span>EMAIL</span><strong>awejosephmofifoluwa@gmail.com</strong></a><a href="tel:+2348108243473"><span>PHONE</span><strong>+234 810 824 3473</strong></a><div class="social-links"><a href="https://linkedin.com/in/awe-joseph-9245b0123" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/josifprince" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://ajworldtech.com" target="_blank" rel="noopener noreferrer">AJWORLDTECH ↗</a></div></div></div></div></section>
+  </main>
+  <footer><div class="container footer-inner"><a class="brand" href="#home" aria-label="Back to top">aj<span>.</span></a><p>© <span id="year">2026</span> Awe Joseph Mofifoluwa</p><a href="#home">Back to top ↑</a></div></footer>
 </body>
 </html>
