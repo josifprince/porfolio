@@ -36,7 +36,9 @@ nav a { font-size: 13px; color: #d4e0e5; }
 nav a:hover, nav a.active { color: #a8d8d1; }
 .nav-contact { border: 1px solid #ffffff55; border-radius: 4px; padding: 9px 18px; }
 .mobile-nav-toggle { display: none; padding: 12px; background: transparent; border: 0; color: white; cursor: pointer; }
-.mobile-nav-toggle span { display: block; width: 24px; height: 2px; background: currentColor; margin: 6px 0; }
+.mobile-nav-toggle span { display: block; width: 24px; height: 2px; background: currentColor; margin: 6px 0; transform-origin: center; transition: transform .2s ease; }
+.mobile-nav-toggle[aria-expanded="true"] span:first-child { transform: translateY(4px) rotate(45deg); }
+.mobile-nav-toggle[aria-expanded="true"] span:last-child { transform: translateY(-4px) rotate(-45deg); }
 .mobile-nav-toggle[hidden] { display: none; }
 .hero { background: var(--navy); color: white; padding: 70px 0 0; }
 .hero-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 70px; align-items: center; padding-bottom: 60px; }
