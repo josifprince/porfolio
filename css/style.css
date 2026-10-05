@@ -49,6 +49,12 @@ h1 span { color: var(--on-dark); }
 .professional-title span { color: #8099ac; margin: 0 4px; }
 .hero-intro { color: var(--muted-dark); font-size: 15px; margin-top: 20px; max-width: 590px; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; margin-top: 30px; }
+.contact-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; }
+.file-label { font-size: 9px; line-height: 1.4; padding: 2px 5px; border: 1px solid currentColor; border-radius: 3px; opacity: .85; }
+.button-cv { background: #bde4dd; border-color: #bde4dd; color: var(--navy); gap: 12px; border-radius: 6px; }
+.button-cv:hover { background: #d4eee9; border-color: #d4eee9; }
+.button-cv .file-label { background: #ffffff70; border-color: #142b3b30; padding: 4px 7px; font-weight: 700; opacity: 1; }
+.cv-icon { width: 18px; height: 18px; flex-shrink: 0; }
 .button { display: inline-flex; justify-content: center; align-items: center; gap: 22px; padding: 13px 20px; border-radius: 4px; background: var(--on-dark); color: var(--navy); font-size: 13px; font-weight: 600; border: 1px solid var(--on-dark); transition: background .2s, border-color .2s; }
 .button:hover { background: #deeeec; border-color: #deeeec; }
 .button-outline { background: transparent; color: var(--on-dark); border-color: #6f879b; }
