@@ -19,7 +19,7 @@ Open `index.html` in a browser, or use VS Code's Live Server extension to serve 
 
 The CV uses a portrait header and two-column layout with embedded Arial fonts. Regeneration uses Windows' `arial.ttf` and `arialbd.ttf` from the system Fonts directory. On another platform, set `CV_FONT_DIRECTORY` to a directory containing licensed copies of these fonts. Fonts are embedded in the PDF; standalone font files are not distributed with the project.
 
-Project cards display authentic screenshots of the public BillChamp, CodeChamp, FreeMeet, WeCare Club Global, and Oghas Academy homepages. Screenshots are captured at 1440 x 1000 and stored as optimized JPEGs in `images/screenshots/`. They depict the public landing pages, including any interface previews shown by those sites. Previously generated illustrations are retained in `images/` but are not displayed. Profile details and product metrics follow the owner's supplied brief.
+Project cards display screenshots of the public BillChamp, CodeChamp, FreeMeet, WeCare Club Global, Oghas Academy, and O.A. Foundation homepages. Screenshots are captured at 1440 x 1000 and stored in `images/screenshots/`; the O.A. Foundation snapshot is PNG, and the earlier captures are optimized JPEGs. They depict the public landing pages, including any interface previews shown by those sites. Previously generated illustrations are retained in `images/` but are not displayed. Profile details and product metrics follow the owner's supplied brief.
 
 ## Validation
 
